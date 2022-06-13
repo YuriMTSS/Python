@@ -1,0 +1,35 @@
+# Passo 6: Enviar um E-mail com o relatório para a diretoria
+
+# Abrir o email
+pyautogui.hotkey("ctrl","t")
+pyperclip.copy("") # O link do seu email
+pyautogi.hotkey("ctrl","v")
+pyautogui.press("enter")
+
+# Clicar no escrever
+pyautogi.click() # Posição do botão
+time.sleep(2)
+
+# Escreve o email do destinatário
+pyautogui.write("") # Email destinatário, pode ser vários
+pyautogui.press("tab") # Depois de todos os email selecionados, aperte 'tab' para selecionar-lo
+pyautogui.press("tab") # Esse 2º 'tab' vai passar para o próximo campo ("Assunto")
+# Outra forma séria usando o mouse com os comandos de 'click()' e 'position()'
+
+# Escreve o assunto
+pyperclip.copy("Relatório de vendas")
+pyautogui.hotkey("ctrl","v")
+pyautogui.press("tab")
+
+# Escreve o campo de email
+texto = f"""     """ # Armazena o texto em aspas triplas, onde será impresso na tela
+# O 'f' permite você imprimir variáveis no meio do texto, então para imprimir variáveis coloque elas em {} no meio do texto
+# Ex: f""" bla bla bla bla {faturamento:,.2f}  bla bla bla {quantidade:,} """
+# ':,' separador de milhar(1,200 - 2,890 - 10,978), ':.2f' separador de casas decimais (2345,00 - 1232,99 - 7898,88) 
+
+pyperclip.copy(texto) # Manda o sistema imprimir lá automaticamente
+pyautogui.hotkey("ctrl","v")
+
+# Enviar o E-Mail
+pyautogui.hotkey("ctrl", "enter")
+# Esse último atalho envia o email automaticamente

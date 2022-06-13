@@ -1,0 +1,5 @@
+# O que precisa
+# WEB Driver
+# OBS: Web Driver precisa ser a mesma versão do Web Browser
+# Instale onde fica o Python no seu computador
+# Biblioteca Selenium: "pip install selenium" (de preferencia use o chrome ou firefox)

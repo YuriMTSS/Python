@@ -1,0 +1,17 @@
+# Preparando o ambiente.
+Passo 1 - Para o evento completo, foi usado o Jupyter: (https://www.anaconda.com), basta instalar e apertar "next" em todas.
+Passo 2 - Abra o aplicativo "Anacondas" e selecione o Web Browser (de preferência Google Chorme)
+Passo 3 - Após abrir navegue até a pasta onde ficará o arquivo da aula.
+Passo 4 - Quando achar a pasta, procure no canto superior direito da tela tem a opção "new", clique em "Python 3 (ipykernel)", um arquivo será criado automaticamente.
+
+# Instalando os pacotes de arquivo
+Passo 5 - Na linha que aparecerá digite: 
+  !pip install pyautogi
+  !pip install pyperclip
+Na opção "run" os pacotes serão baixados
+Caso você for instalar em outro local que não seja o Jupyter remova o "!" da frente
+Após esses passos serem realizados vá para o arquivo 2
+
+===============================================================================================================================================
+
+# Documentação completa do pyautogi: https://pyautogui.readthedocs.io/en/latest/

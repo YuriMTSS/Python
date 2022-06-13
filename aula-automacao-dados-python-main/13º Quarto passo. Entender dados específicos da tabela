@@ -1,0 +1,8 @@
+# Passo 4: Análise simples -> Entender como estão acontecendo os cancelamentos
+
+tabela[""].value_counts() # retorna o tanto de cancelamentos (Sim ou Não)
+tabela[""].value_counts(normalize = True) # Retorna em percentual os valores
+tabela[""].value_counts(normalize = True).map("{:.1%}".format) # Formata os valores para porcentagem deixando mais apresentável
+
+
+

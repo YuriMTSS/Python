@@ -1,0 +1,38 @@
+# Passo 6: Atualizar minha base de dados com as novas cotações.
+import pandas as pd
+
+# Arquivo e dados na mesma pasta, isso torna a importação mais simples
+tabela = pd.read_excel("") # Nome da tabela, se for em uma pasta diferente, copia e cola o caminho do arquivo
+
+
+
+# Atualizar a cotação de acordo com a moeda correspondente
+    # Se for percorrer todas as linhas, funciona, mas se a quantidade de linhas for enorme o código fica lento
+    # Portanto, usaremos um método do pandas para facilitar nossa vida
+
+# Dolar
+# Quando voce pegou a cotação dos valores anteriormente, eles vieram em formato de texto (string)
+# Por isso precisamos converter para números
+# As linhas onde a coluna moeda = dolar, serão modificadas
+tabela.loc[linha, coluna]
+tabela.loc[tabela["Moeda"] == "Dólar", "Cotação"] = float(cotacao_dolar)
+
+# Euro
+tabela.loc[tabela["Moeda"] == "Euro", "Cotação"] = float(cotacao_euro)
+
+# Ouro
+tabela.loc[tabela["Moeda"] == "Ouro", "Cotação"] = float(cotacao_ouro)
+
+
+# Se tu tivesse que criar uma coluna nova
+# tabela["Nova coluna"] = tabela["x"] * tabela["y"]
+
+
+
+# Atualizar preço de compra = preço original * cotação
+tabela["Preco de Compra"] = tabela["Preco Original"] * tabela["Cotação"]
+
+
+# Atualizar o preço de venda = preço de compra * margem
+tabela["Preco de venda"] = tabela["Preco de compra"] * tabela["Margem"]
+

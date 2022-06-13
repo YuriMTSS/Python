@@ -1,0 +1,16 @@
+# Passo 3: Preparando a base de dados para a nossa IA.
+
+from sklearn.model_selection import train_test_split
+
+# Usaremos o exemplo da base de dados que foi usada na aula
+# Iremos ensinar a base de dados a trabalhar
+# Então vamos dividir a base de dados em 4 tabelas X e Y
+# Onde, teremos um X de treino e teste e um Y de treino e teste
+
+# y -> o que voce quer prever - vendas
+y = tabela["Vendas"]
+
+# x -> o resto da base de dados que voce vai usar para fazer a previsão
+x = tabela[["TV", "Rádio", "Jornal"]]
+
+x_treino, x_teste, y_treino, y_teste = train_test_split(x, y)
