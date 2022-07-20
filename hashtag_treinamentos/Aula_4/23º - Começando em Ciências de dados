@@ -1,0 +1,17 @@
+# O que precisa para começar
+
+# Uma base de dados e colocar ela na mesma pasta do seu arquivo
+
+# Duas novas bibliotecas, matplotlib e seaborn
+  # pip install matplotlib
+  # pip install seaborn
+  # pip install scikit.learn
+
+# Para começar em ciência de dados precisa dos 7 passos a seguir.
+  # 1. Entender o desafio.
+  # 2. Entender a área da empresa.
+  # 3. Extrair/Obter dados.
+  # 4. Ajustar os dados (Tratamento/Limpeza).
+  # 5. Análise exploratória.
+  # 6. Modelagem + ALgoritmos (Aqui entra a inteligência artificial, se necessário).
+  # 7. Interpretação dos resultados.

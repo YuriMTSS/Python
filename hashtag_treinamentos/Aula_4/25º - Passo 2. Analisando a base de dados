@@ -1,0 +1,18 @@
+# Passo 2: Análise exploratória -> Entender como a base de dados está se comportando.
+
+# CORRELACAO
+# Tv - Vendas
+# Rádio - Vendas
+# Jornal - Vendas
+
+# tabela.corr() # Esse comando faz a correlação de todas as colunas
+
+import seaborn as sns
+import matplotlid.pyplot as plt
+
+# Cria o gráfico
+sns.heatmap(tabela.corr(), annot = True, cmap = 'wistia') # annot - Mostra os valores/anotações no gráfico, cmap - escala de cor
+
+
+# Exibe o gráfico
+plt.show()
