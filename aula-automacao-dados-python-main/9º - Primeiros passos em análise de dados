@@ -1,6 +1,0 @@
-# Obrigatório possuir a biblioteca Pandas no computador
-# Lembrando, se está usando o Jupyter o Pandas já vem instalado
-
-# Se for para análise de dados pura (desconsiderando a automação de dados)
-# A base de dados em questão PRECISA estar na mesma pasta do arquivo
-

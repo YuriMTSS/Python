@@ -1,5 +1,0 @@
-# Passo 3: Pegar a cotação do dolar
-
-
-# Esse irá pegar o comando que mostra a cotação atualizada - o "get_attribute" pega o atributo desejado
-cotacao_dolar = navegador.find_element(By.XPATH,'').get_attribute('data-value') 

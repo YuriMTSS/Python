@@ -1,6 +1,0 @@
-# Passo 1: Importar a base de dados
-import pandas as pd
-
-tabela = pd.read_csv("") # Como já está na mesma pasta, entre aspas coloque o nome do arquivo e sua extensão
-
-

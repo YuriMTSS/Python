@@ -1,6 +1,0 @@
-# Passo 6: Como fazer novas previsões.
-
-novos = pd.read_csv("") # Uma previsão para o mês que vem, usando outro arquivo na mesma pasta ou caminho
-
-# Modelo vencedor foi a arvode de decisão
-previsao = modelo_arvoreDecisao.predict(novos)

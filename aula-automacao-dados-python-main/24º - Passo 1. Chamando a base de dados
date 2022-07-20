@@ -1,5 +1,0 @@
-# Passo 1: Importando a base de dados.
-
-import pandas as pd
-tabela = pd.read_csv("")
-
