@@ -1,0 +1,16 @@
+# Passo 2: Pesquisar a cotação do dolar.
+
+# Para o selenium ele precisa saber de um caminho/xPATH do campo onde voce quer
+# Os passos:
+  # 1: Vá para o site em questão e clique com o botão direito do mouse e precione "inspecionar elemento"
+  # 2: Quando a tela de código abrir, clique na seta no campo superior esquerdo (da tela aberta), onde terá uma seta de seleção de elementos
+  # 3: Após isso, com o mouse clique no campo que voce deseja, na tela de inspeção, um código será selecionado
+  # 4: Encima do código selecionado clique com o botão direito e copiar o xPATH
+  
+  # OBS: Use aspas simples, as vezes nos caminhos podem vir codigos com aspas duplas e pode gerar erros
+  # Portanto, use sempre aspas simples nos XPATH
+
+# OBS: Selenium trabalha tranquilamente com caracteres especiais
+navegador.find_element(By.XPATH,'').send_Keys("cotação dolar") # Ele prrocura um elemento/codigo no site - entre aspas coloque o XPATH copiado - o que quer procurar 
+
+navegador.find_element(By.XPATH,'').send_Keys(Keys.ENTER) # O caminho do botão "pesquisar" na aba google, precionando o botão enter do teclado

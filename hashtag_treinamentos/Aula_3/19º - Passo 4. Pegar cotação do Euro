@@ -1,0 +1,6 @@
+# Passo 4: Pegar a cotação do euro.
+
+# O processo para a cotação do euro é a mesma que o do dólar, portanto, só precisa mudar um único campo
+# Onde tiver "cotação dólar" substitua por "cotação euro"
+
+# E o código e os caminhos para ir ao mesmo resulto apenas se repetem

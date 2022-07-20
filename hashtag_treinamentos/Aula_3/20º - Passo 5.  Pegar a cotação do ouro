@@ -1,0 +1,9 @@
+# Passo 5: Pegar cotação do ouro.
+
+# Aqui temos uma diferença, enquanto a cotação do euro ou do dolar eles dão a resposta direto
+# Na cotação do ouro, você precisa ir á um site especifico para conseguir o resultado
+
+navegador.get("https://www.melhorcambio.com/ouro-hoje") # Esse é o site para a cotação do ouro
+# Após isso, a estrutura é a mesma, só repetir o mesmo processo das outras duas cotações
+# O código de XPATH pode ser diferente, mas é comum quando a estrutura do site é diferente
+cotacao_ouro = cotacao_ouro.replace(",", ".") # O ouro normalmente vem com ',' então usamos o replace para colocar com '.'
