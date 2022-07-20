@@ -1,0 +1,8 @@
+# Passo 5: Calcular os indicadores
+
+# faturamento, soma da coluna valor final 
+faturamento = tabela["Valor Final"].sum() # Nome da coluna
+
+# quantidade de produtos, soma da coluna quantidade
+qtd_produtos = tabela["Quantidade"].sum()
+

@@ -1,0 +1,42 @@
+import pyautogi
+import pyperclip
+import time
+
+# Passo 1: Entrando no sistema da empresa.
+
+# Quando uma aba nova é aberta sempre tem um tempo de espera, dependendo da sua internet e hardware, para o site inciar
+# O comando abaixo dá uma pausa de 1 segundo a cada comando para esperar que ele seja inicializado corretamente
+pyautogi.PAUSE = 1
+
+# O comando abaixo pode receber inúmeros parâmetros, no caso, "ctrl" "t" irá abrir uma nova aba no navegador
+# Se for comandos mais complexos use ("ctrl", "shift", "delete"), ("ctrl", "alt", "t"), assim por diante
+pyautogi.hotkey("ctrl", "t")
+
+# O pyautogi não pode receber caracteres especiais (ñ, @, Ã, á, etc)
+# Para resolver isso temos o pyperclip
+# Faremos o pyperclip receber/copiar o site da empresa em questão e mandaremos o pyautogi copiar ele na aba
+pyperclip.copy("") # Nos parenteses entre aspas fica o site da empresa, mande para o pyperclip
+pyautogi.hotkey("ctrl", "v")
+
+# Para finalizar, só mandar ele apertar a tecla "enter" no teclado
+pyautogi.press("enter")
+
+# Motivo do "time" no programa:
+  # Algumas abas demoram mais de 1 segundo para serem executados
+  # O time.sleep irá aumentar mais o tempo, após os comandos acima serem executados, teremos uma pause de 5 segundos
+  # Assim o código não quebra e rodamos tranquilamente
+time.sleep(5)
+
+=============================================================================================================================================
+
+# Se estiver usando outro editor de códigos e quiser abrir o navegador
+pyautogi.hotkey("win")
+pyautogi.write("") # Entre aspas digite o nome do navegador
+pyautogi.press("enter")
+
+
+
+
+
+
+# Vamos para o passo 2
